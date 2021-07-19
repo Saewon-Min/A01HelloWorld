@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="322dp"
+        android:layout_height="113dp"
+        android:background="#DFA3EA"
+        android:text="Hello World!"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이트 바로가기" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="전화번호를 입력하세요"
+        android:inputType="number"
+        android:textColorHint="#000000"
+        android:ems="10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_jog_dial_answer"
+        android:text="전화걸기"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btnCall" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30sp"
+        android:text="화면전환"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/myBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="myBtnClick"
+        android:text="onclick 속성을 이용한 버튼" />
+
+
+</LinearLayout>
